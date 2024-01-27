@@ -29,9 +29,13 @@
 .nav .container .mid_bar .content{
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 15px;
     background: #948d8d;
 
+}
+.nav .container .mid_bar .content .logo{
+    display: flex; 
+    align-items: center;
 }
 .nav .container .mid_bar .content .logo img{
     width: 150px;
@@ -118,6 +122,8 @@
 .nav .container .bottom_bar ul li{
     list-style: none;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
 }
 .nav .container .bottom_bar ul li .link{
     color: black;

@@ -77,6 +77,7 @@ const Nav = ({auth,setAuth,userDetail}) => {
                             <div className='icon'>
                                 <FaRegHeart />
                             </div>
+                            
                         </div>
                     </div>
                 </div>
