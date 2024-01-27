@@ -1,0 +1,183 @@
+
+
+.nav .container{
+    display: flex;
+    flex-direction: column;
+}
+.nav .container .top_bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 14px;
+}
+
+.nav .container .top_bar p{
+    font-size: 15px;
+    color: rgb(91, 79, 79);
+    font-weight: 600;
+}
+
+.nav .container .top_bar .link{
+    color: rgb(62, 52, 52);
+}
+.nav .container .top_bar .login_container .link{
+    margin:0px 10px;
+}
+.nav .container .mid_bar{
+    width: 100%;
+}
+.nav .container .mid_bar .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: #948d8d;
+
+}
+.nav .container .mid_bar .content .logo img{
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.nav .container .mid_bar .content .logo img:hover{
+    opacity: 0.6;
+}
+.nav .container .mid_bar .content .search_bar{
+    display: flex;
+    margin-left: -30px;
+}
+.nav .container .mid_bar .content .search_bar input{
+    width: 300px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid gray;
+
+}
+.nav .container .mid_bar .content .search_bar button{
+
+    padding: 14px;
+    width: 70px;
+    outline: none;
+    border: 1px solid rgb(62, 52, 52);
+    background: rgb(255, 145, 0);
+    cursor: pointer;
+    color: white;
+}
+.nav .container .mid_bar .content .icons{
+    display: flex;
+    margin-top: 10px;
+
+}
+.nav .container .mid_bar .content .icons .icon{
+    padding: 10px 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav .container .bottom_bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:30px;
+    background: #646161;
+    flex-wrap: wrap;
+}
+.nav .container .bottom_bar .user_detail{
+    display: flex;
+    background: rgb(204, 195, 195);
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+.nav .container .bottom_bar .user_detail .icon{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav .container .bottom_bar .user_detail .detail{
+    margin-left: 10px;
+}
+.nav .container .bottom_bar .user_detail .detail h2{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.nav .container .bottom_bar .user_detail .detail p{
+    font-weight: 500;
+    font-size: 13px;
+}
+.nav .container .bottom_bar .user_detail .detail .request_signin_con p{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.nav .container .bottom_bar ul{
+    display: flex;
+    margin-top: 15px;
+}
+.nav .container .bottom_bar ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.nav .container .bottom_bar ul li .link{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600
+}
+.nav .container .mid_bar .content .navicon{
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .nav .container .mid_bar .content .navicon{
+        display: block;
+    }
+    .nav .container .mid_bar .content .navicon .navopen{
+        font-size: 18px;
+        margin-top: 6px;
+    }
+    .nav .container .mid_bar .content .navicon .closenav{
+        font-size: 18px;
+        margin-top: 6px;
+    }
+    .nav .container .mid_bar .content .search_bar{
+        position: absolute;
+        display: flex;
+        margin-left: -30px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+        background: #888484;
+        width: 100%;
+    }
+    .nav .container .mid_bar .content .search_bar input{
+        width: 70%;
+        outline: none;
+        padding: 14px;
+    }
+    .nav .container .mid_bar .content .icons{
+        margin-top: 0px;
+    }
+    .nav .container .mid_bar .content .icons .icon{
+        font-size: 15px;
+    }
+    .nav .container .mid_bar .content .logo img{
+        width: 120px;
+        margin-top: 0px;
+    }
+    .nav .container .bottom_bar{
+        margin-top: 47px;
+        display: none;
+    }
+    .nav .container .bottom_bar.active{
+        display: block;
+    }
+    .nav .container .bottom_bar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav .container .bottom_bar ul li{
+        margin-top: 20px;
+    }
+}
